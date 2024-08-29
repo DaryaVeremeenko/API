@@ -1,0 +1,1354 @@
+{
+	"info": {
+		"_postman_id": "45929e78-8b8a-43b5-8296-cdbb767f987d",
+		"name": "APIandMock",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25491986"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "CreateUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"login\": \"example_user\",\r\n\t\"password\": \"securepassword\",\r\n\t\"group_id\": 1,\r\n\t\"address\": \"street\",\r\n\t\"phone_number\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://2a28e31d-2bcc-4446-a4ce-190c544d6f65.mock.pstmn.io/users",
+							"protocol": "https",
+							"host": [
+								"2a28e31d-2bcc-4446-a4ce-190c544d6f65",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "CreateUser",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"login\": \"example_user\",\r\n\t\"password\": \"securepassword\",\r\n\t\"group_id\": 1,\r\n\t\"address\": \"street\",\r\n\t\"phone_number\": \"123456\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://2a28e31d-2bcc-4446-a4ce-190c544d6f65.mock.pstmn.io/users",
+									"protocol": "https",
+									"host": [
+										"2a28e31d-2bcc-4446-a4ce-190c544d6f65",
+										"mock",
+										"pstmn",
+										"io"
+									],
+									"path": [
+										"users"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "1",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 19 Mar 2024 18:18:14 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "164"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "x-srv-trace",
+									"value": "v=1;t=7c0d0ff202ca5cca"
+								},
+								{
+									"key": "x-srv-span",
+									"value": "v=1;s=9f4fdc10011753d4"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "120"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "119"
+								},
+								{
+									"key": "X-RateLimit-Reset",
+									"value": "1710872354"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"a4-7hO0T/XLq3TuFViTu2ZVQQdIY+A\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"Id\":1,\n\t\"login\": \"example_user\",\n\t\"password\": \"securepassword\",\n\t\"group_id\": 1,\n\t\"address\": \"street\",\n\t\"phone_number\": \"123456\"\n}"
+						}
+					]
+				},
+				{
+					"name": "ReadUser",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://2a28e31d-2bcc-4446-a4ce-190c544d6f65.mock.pstmn.io/users/1",
+							"protocol": "https",
+							"host": [
+								"2a28e31d-2bcc-4446-a4ce-190c544d6f65",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "ReadUser",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://2a28e31d-2bcc-4446-a4ce-190c544d6f65.mock.pstmn.io/users/1",
+									"protocol": "https",
+									"host": [
+										"2a28e31d-2bcc-4446-a4ce-190c544d6f65",
+										"mock",
+										"pstmn",
+										"io"
+									],
+									"path": [
+										"users",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 19 Mar 2024 20:52:19 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "150"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "x-srv-trace",
+									"value": "v=1;t=0d4b6ddb72142ef7"
+								},
+								{
+									"key": "x-srv-span",
+									"value": "v=1;s=698c46950afc9d75"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "120"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "115"
+								},
+								{
+									"key": "X-RateLimit-Reset",
+									"value": "1710881547"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"96-S/5iQ2y1qqIInh5BwoPc+chvDJU\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								}
+							],
+							"cookie": [],
+							"body": "\n{\n    \"id\":1,\n\t\"login\": \"example_user\",\n\t\"password\": \"securepassword\",\n\t\"group_id\": 1,\n\t\"address\": \"street\",\n\t\"phone_number\": \"123456\"\n}\n"
+						}
+					]
+				},
+				{
+					"name": "UpdateUser",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"new_email@example.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://2a28e31d-2bcc-4446-a4ce-190c544d6f65.mock.pstmn.io/users/1",
+							"protocol": "https",
+							"host": [
+								"2a28e31d-2bcc-4446-a4ce-190c544d6f65",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "UpdateUser",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "",
+										"value": "",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"new_email@example.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://2a28e31d-2bcc-4446-a4ce-190c544d6f65.mock.pstmn.io/users/1",
+									"protocol": "https",
+									"host": [
+										"2a28e31d-2bcc-4446-a4ce-190c544d6f65",
+										"mock",
+										"pstmn",
+										"io"
+									],
+									"path": [
+										"users",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 20 Mar 2024 09:33:14 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "150"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "x-srv-trace",
+									"value": "v=1;t=9705ffc7bf6aba88"
+								},
+								{
+									"key": "x-srv-span",
+									"value": "v=1;s=b650c1b39ef6a0bb"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "120"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "119"
+								},
+								{
+									"key": "X-RateLimit-Reset",
+									"value": "1710927254"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"96-S/5iQ2y1qqIInh5BwoPc+chvDJU\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"username\": \"example_user\",\n    \"email\": \"new_email@example.com\"\n}"
+						}
+					]
+				},
+				{
+					"name": "DeleteUser",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://2a28e31d-2bcc-4446-a4ce-190c544d6f65.mock.pstmn.io/users/1",
+							"protocol": "https",
+							"host": [
+								"2a28e31d-2bcc-4446-a4ce-190c544d6f65",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "DeleteUser",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "https://2a28e31d-2bcc-4446-a4ce-190c544d6f65.mock.pstmn.io/users/1",
+									"protocol": "https",
+									"host": [
+										"2a28e31d-2bcc-4446-a4ce-190c544d6f65",
+										"mock",
+										"pstmn",
+										"io"
+									],
+									"path": [
+										"users",
+										"1"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 20 Mar 2024 09:37:51 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "150"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "x-srv-trace",
+									"value": "v=1;t=849c4121feb11e73"
+								},
+								{
+									"key": "x-srv-span",
+									"value": "v=1;s=9cb94577ad9dedb0"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "120"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "118"
+								},
+								{
+									"key": "X-RateLimit-Reset",
+									"value": "1710927495"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"96-S/5iQ2y1qqIInh5BwoPc+chvDJU\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User with ID 1 has been deleted\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Group",
+			"item": [
+				{
+					"name": "CreateGroup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"example_group\",\r\n    \"description\": \"This is an example group\",\r\n    \"role_id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://2a28e31d-2bcc-4446-a4ce-190c544d6f65.mock.pstmn.io/groups",
+							"protocol": "https",
+							"host": [
+								"2a28e31d-2bcc-4446-a4ce-190c544d6f65",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"groups"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "CreateGroup",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"example_group\",\r\n    \"description\": \"This is an example group\",\r\n    \"role_id\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://2a28e31d-2bcc-4446-a4ce-190c544d6f65.mock.pstmn.io/groups",
+									"protocol": "https",
+									"host": [
+										"2a28e31d-2bcc-4446-a4ce-190c544d6f65",
+										"mock",
+										"pstmn",
+										"io"
+									],
+									"path": [
+										"groups"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 20 Mar 2024 09:41:55 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "150"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "x-srv-trace",
+									"value": "v=1;t=d0511b526cb5ed3e"
+								},
+								{
+									"key": "x-srv-span",
+									"value": "v=1;s=461a08f6659e7261"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "120"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "119"
+								},
+								{
+									"key": "X-RateLimit-Reset",
+									"value": "1710927775"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"96-S/5iQ2y1qqIInh5BwoPc+chvDJU\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\":1,\n    \"name\": \"example_group\",\n    \"description\": \"This is an example group\",\n    \"role_id\": 1\n}"
+						}
+					]
+				},
+				{
+					"name": "ReadGroup",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://2a28e31d-2bcc-4446-a4ce-190c544d6f65.mock.pstmn.io/groups/1",
+							"protocol": "https",
+							"host": [
+								"2a28e31d-2bcc-4446-a4ce-190c544d6f65",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"groups",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "ReadGroup",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://2a28e31d-2bcc-4446-a4ce-190c544d6f65.mock.pstmn.io/groups/1",
+									"protocol": "https",
+									"host": [
+										"2a28e31d-2bcc-4446-a4ce-190c544d6f65",
+										"mock",
+										"pstmn",
+										"io"
+									],
+									"path": [
+										"groups",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 20 Mar 2024 09:43:05 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "150"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "x-srv-trace",
+									"value": "v=1;t=508bfa1b522e9bcb"
+								},
+								{
+									"key": "x-srv-span",
+									"value": "v=1;s=d4a3d61bd1deb3f7"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "120"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "119"
+								},
+								{
+									"key": "X-RateLimit-Reset",
+									"value": "1710927845"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"96-S/5iQ2y1qqIInh5BwoPc+chvDJU\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\":1,\n    \"name\": \"example_group\",\n    \"description\": \"This is an example group\",\n    \"role_id\": 1\n}"
+						}
+					]
+				},
+				{
+					"name": "UpdateGroup",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\": \"Updated description of the group\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://2a28e31d-2bcc-4446-a4ce-190c544d6f65.mock.pstmn.io/groups/1",
+							"protocol": "https",
+							"host": [
+								"2a28e31d-2bcc-4446-a4ce-190c544d6f65",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"groups",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "UpdateGroup",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"description\": \"Updated description of the group\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://2a28e31d-2bcc-4446-a4ce-190c544d6f65.mock.pstmn.io/groups/1",
+									"protocol": "https",
+									"host": [
+										"2a28e31d-2bcc-4446-a4ce-190c544d6f65",
+										"mock",
+										"pstmn",
+										"io"
+									],
+									"path": [
+										"groups",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 20 Mar 2024 09:44:39 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "150"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "x-srv-trace",
+									"value": "v=1;t=9e122ee205746f31"
+								},
+								{
+									"key": "x-srv-span",
+									"value": "v=1;s=315f1c7c09b824ea"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "120"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "119"
+								},
+								{
+									"key": "X-RateLimit-Reset",
+									"value": "1710927939"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"96-S/5iQ2y1qqIInh5BwoPc+chvDJU\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"name\": \"example_group\",\n    \"description\": \"Updated description of the group\"\n}"
+						}
+					]
+				},
+				{
+					"name": "DeleteGroup",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://2a28e31d-2bcc-4446-a4ce-190c544d6f65.mock.pstmn.io/groups/1",
+							"protocol": "https",
+							"host": [
+								"2a28e31d-2bcc-4446-a4ce-190c544d6f65",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"groups",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "DeleteGroup",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://2a28e31d-2bcc-4446-a4ce-190c544d6f65.mock.pstmn.io/groups/1",
+									"protocol": "https",
+									"host": [
+										"2a28e31d-2bcc-4446-a4ce-190c544d6f65",
+										"mock",
+										"pstmn",
+										"io"
+									],
+									"path": [
+										"groups",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 20 Mar 2024 09:45:41 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "150"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "x-srv-trace",
+									"value": "v=1;t=11f1209e64560f6c"
+								},
+								{
+									"key": "x-srv-span",
+									"value": "v=1;s=5777470652a3a238"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "120"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "119"
+								},
+								{
+									"key": "X-RateLimit-Reset",
+									"value": "1710928001"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"96-S/5iQ2y1qqIInh5BwoPc+chvDJU\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Group with ID 1 has been deleted\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Role",
+			"item": [
+				{
+					"name": "CreateRole",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"admin\",\r\n    \"description\": \"Administrator role\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://2a28e31d-2bcc-4446-a4ce-190c544d6f65.mock.pstmn.io/roles",
+							"protocol": "https",
+							"host": [
+								"2a28e31d-2bcc-4446-a4ce-190c544d6f65",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"roles"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "CreateRole",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"admin\",\r\n    \"description\": \"Administrator role\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://2a28e31d-2bcc-4446-a4ce-190c544d6f65.mock.pstmn.io/roles",
+									"protocol": "https",
+									"host": [
+										"2a28e31d-2bcc-4446-a4ce-190c544d6f65",
+										"mock",
+										"pstmn",
+										"io"
+									],
+									"path": [
+										"roles"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 20 Mar 2024 09:48:01 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "150"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "x-srv-trace",
+									"value": "v=1;t=ed26dc7e486db20c"
+								},
+								{
+									"key": "x-srv-span",
+									"value": "v=1;s=de9454fcd905a255"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "120"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "117"
+								},
+								{
+									"key": "X-RateLimit-Reset",
+									"value": "1710928108"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"96-S/5iQ2y1qqIInh5BwoPc+chvDJU\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"name\": \"admin\",\n    \"description\": \"Administrator role\"\n}"
+						}
+					]
+				},
+				{
+					"name": "ReadRole",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://2a28e31d-2bcc-4446-a4ce-190c544d6f65.mock.pstmn.io/roles/1",
+							"protocol": "https",
+							"host": [
+								"2a28e31d-2bcc-4446-a4ce-190c544d6f65",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"roles",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "ReadRole",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://2a28e31d-2bcc-4446-a4ce-190c544d6f65.mock.pstmn.io/roles/1",
+									"protocol": "https",
+									"host": [
+										"2a28e31d-2bcc-4446-a4ce-190c544d6f65",
+										"mock",
+										"pstmn",
+										"io"
+									],
+									"path": [
+										"roles",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 20 Mar 2024 09:49:00 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "150"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "x-srv-trace",
+									"value": "v=1;t=b22f47d954a1c0be"
+								},
+								{
+									"key": "x-srv-span",
+									"value": "v=1;s=5dda5e5eb6ba23f0"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "120"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "119"
+								},
+								{
+									"key": "X-RateLimit-Reset",
+									"value": "1710928200"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"96-S/5iQ2y1qqIInh5BwoPc+chvDJU\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"name\": \"admin\",\n    \"description\": \"Administrator role\"\n}"
+						}
+					]
+				},
+				{
+					"name": "UpdateRole",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\": \"Updated description of the role\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://2a28e31d-2bcc-4446-a4ce-190c544d6f65.mock.pstmn.io/roles/1",
+							"protocol": "https",
+							"host": [
+								"2a28e31d-2bcc-4446-a4ce-190c544d6f65",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"roles",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "UpdateRole",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"description\": \"Updated description of the role\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://2a28e31d-2bcc-4446-a4ce-190c544d6f65.mock.pstmn.io/roles/1",
+									"protocol": "https",
+									"host": [
+										"2a28e31d-2bcc-4446-a4ce-190c544d6f65",
+										"mock",
+										"pstmn",
+										"io"
+									],
+									"path": [
+										"roles",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 20 Mar 2024 09:49:56 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "150"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "x-srv-trace",
+									"value": "v=1;t=1a3bccffbfb1b707"
+								},
+								{
+									"key": "x-srv-span",
+									"value": "v=1;s=ffde4179bd77b190"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "120"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "118"
+								},
+								{
+									"key": "X-RateLimit-Reset",
+									"value": "1710928200"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"96-S/5iQ2y1qqIInh5BwoPc+chvDJU\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"name\": \"admin\",\n    \"description\": \"Updated description of the role\"\n}"
+						}
+					]
+				},
+				{
+					"name": "DeleteRole",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://2a28e31d-2bcc-4446-a4ce-190c544d6f65.mock.pstmn.io/roles/1",
+							"protocol": "https",
+							"host": [
+								"2a28e31d-2bcc-4446-a4ce-190c544d6f65",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"roles",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "DeleteRole",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "https://2a28e31d-2bcc-4446-a4ce-190c544d6f65.mock.pstmn.io/roles/1",
+									"protocol": "https",
+									"host": [
+										"2a28e31d-2bcc-4446-a4ce-190c544d6f65",
+										"mock",
+										"pstmn",
+										"io"
+									],
+									"path": [
+										"roles",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 20 Mar 2024 09:50:51 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "150"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "x-srv-trace",
+									"value": "v=1;t=9c5eefcf21dab7a4"
+								},
+								{
+									"key": "x-srv-span",
+									"value": "v=1;s=f5b76b5d6a9cc94f"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "120"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "118"
+								},
+								{
+									"key": "X-RateLimit-Reset",
+									"value": "1710928286"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"96-S/5iQ2y1qqIInh5BwoPc+chvDJU\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Role with ID 1 has been deleted\"\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
